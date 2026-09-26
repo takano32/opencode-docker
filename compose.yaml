@@ -9,6 +9,7 @@ services:
     environment:
       # 設定すると Basic 認証が有効になる (ユーザー名は opencode)
       - OPENCODE_SERVER_PASSWORD=${OPENCODE_SERVER_PASSWORD:-}
+      - OPENCODE_API_KEY=${OPENCODE_API_KEY:-}
     volumes:
       - ./workspace:/workspace
       - opencode-config:/root/.config/opencode
