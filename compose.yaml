@@ -4,7 +4,7 @@ services:
     # イメージの ENTRYPOINT が ["opencode"] なので引数だけ渡す
     command: ["serve", "--hostname", "0.0.0.0", "--port", "4096"]
     ports:
-      - "4096:4096"
+      - "127.0.0.1:4096:4096"
     working_dir: /workspace
     environment:
       # 設定すると Basic 認証が有効になる (ユーザー名は opencode)
